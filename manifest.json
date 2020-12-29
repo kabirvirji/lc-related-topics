@@ -1,0 +1,21 @@
+{
+    "name": "LeetCode Related Topics Quiz",
+    "description": "pop quiz for LeetCode related topics",
+    "version": "0.1.0",
+    "manifest_version": 2,
+    "icons": {},
+    "background": {
+        "scripts": ["./background.js"]
+    },
+    "options_page": "./options.html",
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "declarativeContent",
+        "tabs",
+        "http://*/",
+        "https://*/",
+        "storage"
+    ]
+}
