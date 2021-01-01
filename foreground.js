@@ -1,4 +1,4 @@
-var topic_elements = document.getElementsByClassName("tag__2PqS")
+var topic_elements = document.getElementsByClassName("tag__2PqS") // keeps getting redefined on every open
 var topics = []
 
 const set_topics = (topics, topic_elements) => {
@@ -7,7 +7,7 @@ const set_topics = (topics, topic_elements) => {
     }
     console.log(topics)
     chrome.storage.local.set({topics: topics}, function() {
-        console.log('the topics are ' + topics);
+        console.log(topics);
     })
 }
 
