@@ -18,7 +18,7 @@ document.getElementById('submit').onclick = function check() {
     }
     console.log(checked_topics, topics)
     if (checked_topics.length != topics.length) {
-        alert(`${checked_topics.length},${topics.length}`)
+        alert(false)
     } else {
         // check all elements
         for (var j = 0; j < checked_topics.length; j++) {
@@ -28,15 +28,10 @@ document.getElementById('submit').onclick = function check() {
                 break
             }
         }
+        if (correct == 1) {
+            alert(true)
+        }
     }
-    if (correct == 1) {
-        alert(true)
-    }
-    
- 
  }
-
-// const check_answers = (topics) => {
-// }
 
 
